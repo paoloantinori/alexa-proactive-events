@@ -1,0 +1,9 @@
+node_modules/
+lambda/custom/node_modules/
+.env
+.ask/
+
+# SMAPI manifest artifacts (contain vendor ID)
+manifest-create.json
+manifest-update.json
+manifest-patch.json

@@ -1,0 +1,106 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Ping Me",
+          "summary": "A skill that sends you proactive message notifications.",
+          "description": "Ping Me sends you proactive message alerts on your Alexa device. Enable notifications to receive updates when new messages arrive.",
+          "examplePhrases": [
+            "Alexa, open ping me",
+            "Alexa, ask ping me to send a notification",
+            "Alexa, ask ping me for my status"
+          ],
+          "keywords": [
+            "notification",
+            "message",
+            "alert",
+            "ping"
+          ]
+        },
+        "en-GB": {
+          "name": "Ping Me",
+          "summary": "A skill that sends you proactive message notifications.",
+          "description": "Ping Me sends you proactive message alerts on your Alexa device. Enable notifications to receive updates when new messages arrive.",
+          "examplePhrases": [
+            "Alexa, open ping me",
+            "Alexa, ask ping me to send a notification"
+          ],
+          "keywords": [
+            "notification",
+            "message",
+            "alert"
+          ]
+        },
+        "it-IT": {
+          "name": "Ping Me",
+          "summary": "Invia notifiche proattive al tuo dispositivo Alexa.",
+          "description": "Ping Me invia avvisi di messaggi proattivi al tuo dispositivo Alexa. Abilita le notifiche per ricevere aggiornamenti.",
+          "examplePhrases": [
+            "Alexa, apri ping me",
+            "Alexa, chiedi a ping me di inviare una notifica"
+          ],
+          "keywords": [
+            "notifica",
+            "messaggio",
+            "avviso"
+          ]
+        }
+      },
+      "distributionCountries": ["US", "GB", "IT", "DE", "FR", "ES"],
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say 'Alexa, open ping me'. Then say 'send a notification'. Check the Alexa app or device for the notification."
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Trusted",
+          "uri": "https://test.casanande.mywire.org"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:notifications:write"
+      }
+    ],
+    "events": {
+      "publications": [
+        {
+          "eventName": "AMAZON.MessageAlert.Activated"
+        }
+      ],
+      "subscriptions": [
+        {
+          "eventName": "SKILL_PROACTIVE_SUBSCRIPTION_CHANGED"
+        }
+      ],
+      "endpoint": {
+        "sslCertificateType": "Trusted",
+        "uri": "https://test.casanande.mywire.org"
+      },
+      "regions": {
+        "NA": {
+          "endpoint": {
+            "sslCertificateType": "Trusted",
+            "uri": "https://test.casanande.mywire.org"
+          }
+        },
+        "EU": {
+          "endpoint": {
+            "sslCertificateType": "Trusted",
+            "uri": "https://test.casanande.mywire.org"
+          }
+        },
+        "FE": {
+          "endpoint": {
+            "sslCertificateType": "Trusted",
+            "uri": "https://test.casanande.mywire.org"
+          }
+        }
+      }
+    }
+  }
+}

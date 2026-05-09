@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Ping Me",
+          "summary": "A skill that sends you proactive message notifications.",
+          "description": "Ping Me sends you proactive message alerts on your Alexa device. Enable notifications to receive updates when new messages arrive.",
+          "smallIconUri": "https://via.placeholder.com/108/09f/09f.png",
+          "largeIconUri": "https://via.placeholder.com/512/09f/09f.png",
+          "examplePhrases": [
+            "Alexa, open ping me",
+            "Alexa, ask ping me to send a notification",
+            "Alexa, ask ping me for my status"
+          ],
+          "keywords": [
+            "notification",
+            "message",
+            "alert",
+            "ping"
+          ]
+        }
+      },
+      "distributionCountries": ["US"],
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Say 'Alexa, open ping me'. Then say 'send a notification'. Check the Alexa app or device for the notification."
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:notifications:write"
+      }
+    ]
+  }
+}

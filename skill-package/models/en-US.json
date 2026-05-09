@@ -1,0 +1,51 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "ping me",
+      "intents": [
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "SendNotificationIntent",
+          "slots": [],
+          "samples": [
+            "send a notification",
+            "send me a notification",
+            "send a message",
+            "send me a message",
+            "notify me",
+            "ping me",
+            "alert me",
+            "send an alert"
+          ]
+        },
+        {
+          "name": "CheckStatusIntent",
+          "slots": [],
+          "samples": [
+            "what is my status",
+            "check my status",
+            "am I subscribed",
+            "status",
+            "am I set up"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}

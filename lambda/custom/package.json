@@ -1,0 +1,9 @@
+{
+  "name": "ping-me-skill",
+  "version": "1.0.0",
+  "description": "Alexa skill with proactive MessageAlert notifications",
+  "main": "index.js",
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0"
+  }
+}
